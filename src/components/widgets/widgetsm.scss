@@ -1,0 +1,39 @@
+@import "../../scss/mixins";
+@import "../../scss/placeholders";
+@import "../../scss/variables";
+
+.widgetSm{
+  flex: 1;
+  @extend %shadow;    
+}
+
+.widgetSmTitle{
+  margin: 0 0 20px
+}
+
+.widgetSmItem{
+  @include dflex(row, space-between, center,0);
+  padding: 10px;  
+}
+
+.widgetSmImage{  
+  @include circle(40px,40px);
+  object-fit: cover;
+}
+
+.widgetSmInfo{
+  @include dflex(column, flex-start, center,0);
+  .name{    
+    font-weight: 600;
+  }
+  .ocupation{
+    font-size: .9rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.widgetSmBtn{  
+  @include btnHover(transparent,teal,teal,teal,white,2px,5px, 10px );
+  @include dflex(row, center, center, 10px);
+}

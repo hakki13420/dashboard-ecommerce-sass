@@ -1,0 +1,48 @@
+@import './variables';
+
+@mixin dflex($dir:column,$jc:center,$ai:center, $gap:10px){    
+  display:flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+  align-items: $ai;    
+  gap:$gap;
+}
+
+@mixin position-el($t:0,$r:0,$w:20px,$h:20px){
+  position: absolute;
+  top:$t;
+  right:$r;
+  width: $w;
+  height:$h;
+}
+
+@mixin hoverEffect($bg1,$color1,$bg2,$color2){
+  cursor: pointer;
+  background-color: $bg1;
+  color:$color1;
+  &:hover{
+    background-color: $bg2;
+    color: $color2;
+  }
+}
+
+@mixin circle($w,$h){
+  width: $w;
+  height: $h;
+  border-radius: 50%;
+}
+
+@mixin btnHover($bg, $col,$borderCol,$hbg,$hcol,$radius,$ptb,$plr){
+  background-color: $bg;
+  color: $col;
+  border: 1px solid $borderCol;
+  border-radius: $radius;
+  padding: $ptb $plr;
+  cursor: pointer;
+  transition: $transition;
+  &:hover{
+    color:$hcol;
+    background-color: $hbg;
+    transform: scale(.98);
+  }
+}

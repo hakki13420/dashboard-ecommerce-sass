@@ -1,0 +1,30 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+
+.TitleWithCreateBtn{    
+  @include dflex(row, space-between, center, 0);
+  border-bottom: 2px solid gray;
+  width: 100%;
+  margin: 0 0 20px;
+  h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+  } 
+}
+
+.button{
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+  font-weight: 600;
+  padding: 7px 15px;
+  transition: $transition;
+  cursor: pointer;
+  @include dflex(row,center, center);
+  &:hover{
+    background-color: blue;
+    color: white;
+  }
+}

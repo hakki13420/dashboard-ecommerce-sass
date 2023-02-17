@@ -1,0 +1,48 @@
+@import '../../scss/mixins';
+@import '../../scss/placeholders';
+
+.widgetLg{
+  flex: 2;
+  @extend %shadow;
+}
+
+.widgetLgTitle{
+  margin: 0 0 20px;
+}
+
+.widgetLgTable{
+  width:100%;
+  border-spacing: 20px;
+  tr{
+    text-align: left;
+    margin: 10px 0;    
+    td{
+      text-align: left;
+      .wgBtn{
+        display: block;
+        width: 100px;        
+        text-align: center
+      }
+    }
+  }
+}
+
+.wgTdImage{
+  @include dflex(row, flex-start,center, 10px);
+  img{
+    @include circle(40px, 40px);
+    object-fit: cover;
+  }
+}
+
+.Pending{
+  @include btnHover(blue,white,blue,transparent,blue,2px,5px, 10px );
+}
+
+.Approuved{
+  @include btnHover(teal,white,teal,transparent,teal,2px,5px, 10px );
+}
+
+.Rejected{
+  @include btnHover(red,white,red,transparent,red,2px,5px, 10px );
+}

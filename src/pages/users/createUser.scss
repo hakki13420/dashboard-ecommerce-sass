@@ -1,0 +1,51 @@
+@import '../../scss/mixins';
+@import '../../scss/placeholders';
+
+.createUser{
+  flex:5;
+  padding: 20px;
+  h3{
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    margin: 20px;    
+  }
+}
+
+.createUserContainer{
+  @extend %shadow;
+}
+
+.createUserForm{
+  @include dflex(row, space-between, unset);  
+  flex-wrap: wrap;
+  padding: 20px;
+  .formItem{
+    width: 45%;
+    @include dflex(column, unset, unset);
+    margin: 0 0 10px;
+    label{
+      color: gray;
+    }
+    input{
+      border:none;
+      border-bottom: 1px solid gray;
+      padding: 10px;
+      background-color: whitesmoke!important;
+    }
+    .genreContainer{     
+      @include dflex(row, flex-start, center, 30px);
+      input{
+        cursor: pointer;        
+      }
+    }
+    select{
+      padding: 5px 10px;
+      cursor: pointer;        
+    }
+  }
+}
+
+.submitBtn{
+ width: 120px; 
+ @include btnHover(teal, white,teal,transparent,teal,4px,5px,25px);          
+}

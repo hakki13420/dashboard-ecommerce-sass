@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.home{    
+  flex: 6;
+  padding: 30px;
+  //@extend %full-container;    
+  background-color: wheat;
+}
+
+.widgets{
+  display: flex;
+  gap: 20px;
+}

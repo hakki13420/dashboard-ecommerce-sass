@@ -1,0 +1,17 @@
+@import './scss/mixins';
+@import './scss/variables';
+
+.App{
+    
+}
+
+.container{
+    //@include dflex(row,unset,unset,0);    
+    display:flex;
+    width: 100%;    
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;    
+}

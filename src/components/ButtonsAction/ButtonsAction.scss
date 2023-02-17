@@ -1,0 +1,19 @@
+@import '../../scss/mixins';
+
+.actionField{    
+    @include dflex(row,center, center, 10px);
+  }
+  
+  .editBtn{
+    cursor: pointer;
+    &:hover{
+      color: teal;
+    }
+  }
+  .deleteBtn{
+    cursor: pointer;
+    color: red;
+    &:hover{
+      color: teal;
+    }
+  }

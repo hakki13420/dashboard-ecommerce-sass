@@ -1,0 +1,41 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+.topBar{
+    @include dflex(row,space-between,center);    
+    height: 50px;
+    background-color:$main-color;
+    color:$text-main-color;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    .topBarLeft{
+        padding: 10px;        
+            .firstText{
+                font-size: 18px;               
+                color:red;            
+            }        
+            .secondText{
+                font-size: 30px;                
+                color:$fourth-color;            
+            }        
+    }
+    .topBarRight{
+        padding: 0 20px;
+        .containerIcons{
+          @include dflex(row, space-between,center,30px)
+        }
+        
+    }
+}
+
+.icon{
+  position:relative;
+  .badge{
+    @include position-el(-6px,-6px,15px,15px);
+    border-radius: 50%;
+    background-color: $fourth-color;
+    font-size: 11px;
+    @include dflex(row, center,center)
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../scss/mixins';
+
+.users{
+  flex: 6;
+  padding: 30px;
+  height: 400;
+  width: 100%;
+}
+.userHeader{
+  @include dflex(row, space-between, center);  
+}
+
+
+.usernameField{
+  @include dflex(row, center, center, 10px);
+  img{
+      @include circle(40px,40px)
+  }
+}

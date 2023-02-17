@@ -1,0 +1,128 @@
+@import '../../scss/mixins';
+@import '../../scss/placeholders';
+
+.user{    
+  flex: 5;
+  @include dflex(column,unset, unset, 20px);    
+  padding: 30px 20px;
+  .title{
+    padding: 10px;
+    border-bottom: 2px solid gray;    
+  }
+}
+
+.userContainer{
+  @include dflex(row, unset, unset, 20px);
+}
+
+.userShow{
+  flex: 1;
+  @extend %shadow;
+  padding: 20px;
+}
+
+.userShowTop{
+  @include dflex(row, unset, center, 20px);
+  padding: 10px;
+  img{
+    @include circle(50px, 50px);
+    object-fit: cover;
+    border: 3px solid teal;
+  }
+  .userShowTopInfo{
+    @include dflex(column, unset, center, 5px);
+    .name{
+      font-weight:600;
+    }
+    .ocupation{
+      font-weight:300;
+    }
+  }
+}
+
+.userShowBottom{
+  margin: 30px 0;
+
+  .userShowBottomTitle{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 20px 0;
+    color: gray;
+  }
+}
+
+.userShowBottomItem{
+  @include dflex(row,unset, center, 20px);
+  margin: 0 0 30px;  
+  .icon{
+    font-size: 1.2rem;
+  }
+}
+
+.userEdit{
+  flex: 2;
+  @extend %shadow;
+}
+
+.userEditForm{
+  @include dflex(row, unset, unset, 0px);
+  padding: 20px;
+}
+
+.userEditLeft{
+  flex: 1;
+}
+
+.userEditLeftItem{
+  @include dflex(column , unset, unset, 10px);
+  margin: 0 0 20px;
+  label{
+    font-size: 1.2rem;
+  }
+  input{
+    padding: 10px;
+    border: none;
+    background-color: whitesmoke;  
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    &:focus{
+      background-color: gainsboro;      
+    }
+  }
+}
+
+.userEditRight{
+  flex: 1;
+  @include dflex(column, space-between, unset);
+  .userEditRightUpload{
+    @include dflex(column, center, center);
+    img{
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .textInfo{
+      color: gray;
+      font-weight: 200;
+      font-size: .9rem;
+      font-style: italic;
+      width: 100px;
+      text-align: center;
+    }
+    button{
+      width: 100px;
+      border-radius:4px;
+      color:teal;
+      background-color: transparent;
+      padding: 5px 0;
+      border: 1px solid teal;
+      cursor: pointer;
+      &:hover{
+        color:white;
+        background-color: teal;
+        transform: scale(1.02);
+      }
+    }
+  }
+}

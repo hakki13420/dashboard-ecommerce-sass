@@ -1,0 +1,21 @@
+@import '../../scss/mixins';
+
+.createProduct{
+  flex: 5;
+  padding: 30px;
+}
+
+.createProdContainer{
+  @include dflex(column, unset, unset, 20px);
+}
+
+.createProdForm{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formItem{
+  width: 45%;
+  @include dflex(column, unset, unset, 20px);
+}

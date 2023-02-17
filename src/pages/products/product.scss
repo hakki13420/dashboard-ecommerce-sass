@@ -1,0 +1,90 @@
+@import '../../scss/mixins';
+@import '../../scss/placeholders';
+
+.product{
+  flex: 5;
+  padding: 20px;
+  h3{
+    margin: 0 0 20px;
+  }
+}
+
+.imageField{
+  @include circle(50px, 50px);
+}
+
+.productTop{
+  @include dflex(row, unset, unset, 20px);
+  margin: 0 0 20px;
+}
+
+.productTopLeft{
+  flex:2;   
+}
+
+.productTopRight{
+  flex:1; 
+  @extend %shadow;
+  margin:0 0 30px;
+  .header{
+    padding: 10px;
+    @include dflex(row, center, center, 10px);
+    margin: 0 0 20px;
+    img{
+      @include circle(40px, 40px);
+    }
+    h3{
+      margin: 0;
+    }
+  }
+  .body{
+    ul{
+      @include dflex(column,flex-start, unset, 10px);
+    }
+  }
+}
+
+.productBottom{
+  @extend %shadow;
+  margin: -30px 0 0;
+  form{
+    @include dflex(row, center, center, 20px);
+  }
+}
+
+.productBottomLeft{
+  flex:1;
+  .item{
+    @include dflex(column, unset, unset);
+    margin: 0 0 15px;
+    label{
+      color:gray;
+    }
+    input{
+      border:none;
+      border-bottom: 1px solid gray;
+      color: gray;
+      padding: 5px 10px;
+      height: 30px;
+      background-color: whitesmoke;      
+    }
+    select{
+      height: 30px;
+      padding: 5px 10px;
+    }
+  }
+
+}
+
+.productBottomRight{
+  flex:1;
+  @include dflex(column, center, center);
+  .productImageUpdate{
+    width:120px;
+    height: auto;
+    border-radius: 10px;
+  }
+  button{
+    @include btnHover(transparent, teal,teal,teal,white,4px,5px,25px);
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../scss/mixins';
+@import '../../scss/placeholders';
+@import '../../scss/variables';
+
+.FeatureInfo{    
+  @include dflex(row,space-between,center);    
+  width: 100%;
+  background-color: wheat;      
+  margin: 0 0 40px;
+}
+
+.featureInfoTitle{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200
+}
+
+.featureInfoItem{    
+  @include dflex(column,center,center,20px);      
+  @extend %shadow;  
+  width: 280px;
+  height: 180px;
+}
+
+.featureInfoMoney{
+  @include dflex(row, space-between, center);
+  width: 70%;
+}
+
+.money{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.rate{
+  font-size: 1rem;
+  @include dflex(row,center, center,10px)
+}
+
+.rateRed{
+  color: red;
+}
+
+.rateGreen{
+  color: green;
+}
+
+.comparedText{
+  color:gray;
+  font-style: italic;
+}
