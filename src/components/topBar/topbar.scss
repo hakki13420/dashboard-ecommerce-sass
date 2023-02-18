@@ -2,31 +2,33 @@
 @import '../../scss/variables';
 
 .topBar{
-    @include dflex(row,space-between,center);    
-    height: 50px;
-    background-color:$main-color;
-    color:$text-main-color;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    .topBarLeft{
-        padding: 10px;        
-            .firstText{
-                font-size: 18px;               
-                color:red;            
-            }        
-            .secondText{
-                font-size: 30px;                
-                color:$fourth-color;            
-            }        
+  @include dflex(row,space-between,center);    
+  height: 50px;
+  background-color:$main-color;
+  color:$text-main-color;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  .topBarLeft{
+    padding: 10px;        
+      .firstText{
+        font-size: 18px;               
+        color:red;            
+      }        
+      .secondText{
+        font-size: 30px;                
+        color:$fourth-color;            
+      }        
     }
     .topBarRight{
-        padding: 0 20px;
-        .containerIcons{
-          @include dflex(row, space-between,center,30px)
-        }
-        
+      padding: 0 20px;
+      .containerIcons{
+        @include dflex(row, space-between,center,30px)
+      }        
     }
+}
+.logo{
+  cursor: pointer;
 }
 
 .icon{

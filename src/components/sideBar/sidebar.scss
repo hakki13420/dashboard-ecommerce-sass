@@ -10,7 +10,23 @@
   position: sticky;
   top:50px;
   height:calc(100vh - 50px);
+  @media screen and (max-width: 768px){
+   width:40px;   
+   text-align: center;
+   padding: 5px;
+  }
 }
+
+.menuIcon{
+  color:white;
+  display: none;
+  @media screen and (max-width: 768px){
+    display: inline-block;    
+    margin: 0 0 20px;
+    font-size: 14px;
+  }
+}
+
 .sideBarItem{
   padding: 0 10px;  
     .sideBarItemTitle{
@@ -19,14 +35,34 @@
       border-radius: 20px;
       padding: 5px 15px;
       color: whitesmoke;
+      @media screen and (max-width: 768px){
+        @include dflex(row,center, center);      
+      }
     }
+  @media screen and (max-width: 768px){
+    padding: 0;
+  }
 }
 .title{
-  @include dflex(row,flex-start,center,10px)
+  @include dflex(row,flex-start,center,10px);
+  @media screen and (max-width: 768px){
+    @include dflex(row,center,center,0);    
+  }
+  .iconTitle{
+    font-size: 14px;
+  }
+  .theTitle{
+    @media screen and (max-width: 768px){
+      display: none;   
+    }
+  }
 }
 
 .arrowSlide{  
   @include hoverEffect($second-color,white,$second-color, $fourth-color);  
+  @media screen and (max-width: 768px){
+    display: none;   
+  }
 }
 .menu{
   @include dflex(column,flex-start,flex-start);
@@ -37,6 +73,9 @@
   background-color: $second-color;  
   height:0;
   overflow:hidden;
+  @media screen and (max-width: 768px){
+    padding: 5px;    
+  }
 }
 .menuItem{
   color:$fourth-color;

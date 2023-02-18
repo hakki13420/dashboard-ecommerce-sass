@@ -8,7 +8,7 @@ const Chart = ({title,data,dataKey, grid }) => {
     <h3 className="chartTitle">
       {title}
     </h3>
-    <ResponsiveContainer width="100%" aspect={4/1}>
+    <ResponsiveContainer width="98%" aspect={4/1}>
       <LineChart data={data}>
         <Line type="monotone" dataKey={dataKey} stroke="#8884d8" />        
         <XAxis dataKey="name" />

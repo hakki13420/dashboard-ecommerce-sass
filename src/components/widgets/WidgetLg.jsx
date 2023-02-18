@@ -17,7 +17,7 @@ const WidgetLg = () => {
         <thead>
         <tr className="widgetLgTr">
           <th>Customer</th>
-          <th>date</th>
+          <th className="dateCell">date</th>
           <th>Amount</th>
           <th>status</th>
         </tr>
@@ -28,7 +28,7 @@ const WidgetLg = () => {
             <img className="widgetLgImage" src="https://images.pexels.com/photos/5443335/pexels-photo-5443335.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
             <span>Jhon Doe</span>
           </td>
-          <td>
+          <td className="dateCell">
             <span>24/10/2022</span>
           </td>
           <td>
@@ -44,7 +44,7 @@ const WidgetLg = () => {
             <img className="widgetLgImage" src="https://images.pexels.com/photos/5443335/pexels-photo-5443335.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
             <span>Jhon Doe</span>
           </td>
-          <td>
+          <td className="dateCell">
             <span>24/10/2022</span>
           </td>
           <td>
@@ -60,7 +60,7 @@ const WidgetLg = () => {
             <img className="widgetLgImage" src="https://images.pexels.com/photos/5443335/pexels-photo-5443335.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
             <span>Jhon Doe</span>
           </td>
-          <td>
+          <td className="dateCell">
             <span>24/10/2022</span>
           </td>
           <td>
@@ -76,7 +76,7 @@ const WidgetLg = () => {
             <img className="widgetLgImage" src="https://images.pexels.com/photos/5443335/pexels-photo-5443335.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
             <span>Jhon Doe</span>
           </td>
-          <td>
+          <td className="dateCell">
             <span>24/10/2022</span>
           </td>
           <td>
@@ -92,7 +92,7 @@ const WidgetLg = () => {
             <img className="widgetLgImage" src="https://images.pexels.com/photos/5443335/pexels-photo-5443335.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
             <span>Jhon Doe</span>
           </td>
-          <td>
+          <td className="dateCell">
             <span>24/10/2022</span>
           </td>
           <td>

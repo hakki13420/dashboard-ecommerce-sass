@@ -1,3 +1,5 @@
+import { Dashboard, PeopleOutline, BarChartOutlined, SettingsOutlined} from '@mui/icons-material';
+
 export const data = [
     {name: 'Jan', 'data user': 400},
     {name: 'Feb', 'data user': 500},
@@ -79,3 +81,30 @@ export const data = [
     { id: 10, title: 'Product one', price: 234, image: 'https://images.pexels.com/photos/3914693/pexels-photo-3914693.jpeg?auto=compress&cs=tinysrgb&w=400' },  
     { id: 11, title: 'Product one', price: 234, image: 'https://images.pexels.com/photos/3914693/pexels-photo-3914693.jpeg?auto=compress&cs=tinysrgb&w=400' },  
   ];
+
+  export const sideBarItems=[ {id:1,title:"Dashboard", icon:Dashboard,
+  items:[
+    {id:1,title:'Home',link:'/'},
+    {id:2,title:'Analytics'},
+    {id:3,title:'Sales'}
+  ]},
+{id:2, title:"Collections", icon:PeopleOutline,
+  items:[
+    {id:1,title:'Users',link:'/users'},
+    {id:2,title:'Products',link:'/products'},
+    {id:3,title:'Transactions'},
+    {id:4,title:'Reports'}
+  ]},
+{id:3,title:"Notificationss", icon:BarChartOutlined,
+  items:[
+    {id:1,title:'Mails'},
+    {id:2,title:'Feedbacks'},
+    {id:3,title:'Messages'},              
+  ]},
+{id:4,title:"settings", icon:SettingsOutlined,
+  items:[
+    {id:1,title:'Manage'},
+    {id:2,title:'Analytics'},
+    {id:3,title:'Reports'}
+  ]}
+]

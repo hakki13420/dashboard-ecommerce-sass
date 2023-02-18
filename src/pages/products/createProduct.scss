@@ -18,4 +18,16 @@
 .formItem{
   width: 45%;
   @include dflex(column, unset, unset, 20px);
+  label{
+    color: gray;
+  }
+  input{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 7px 10px;
+    color:gray;
+  }
+  select{
+    padding: 7px 10px;
+  }
 }

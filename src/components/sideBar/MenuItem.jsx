@@ -16,8 +16,8 @@ const MenuItem = ({element}) => {
         <div className="sideBarItem">
         <div className="sideBarItemTitle">
           <div className="title">
-            <element.icon />
-            <h5>{element.title}</h5>
+            <element.icon className="iconTitle" onClick={slideHandl} />
+            <h5 className="theTitle" >{element.title}</h5>
           </div>
           <div className="arrowSlide">
             {            
@@ -28,7 +28,7 @@ const MenuItem = ({element}) => {
             }
           </div>
         </div>
-        <ul className={slideUp?'menu active':'menu'}>
+        <ul className={slideUp?'menu active':'menu'} >
           {              
             element.items.map(item=>{
               return <li className="menuItem" key={item.id}>

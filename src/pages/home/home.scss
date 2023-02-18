@@ -11,4 +11,7 @@
 .widgets{
   display: flex;
   gap: 20px;
+  @media screen and (max-width: 1095px){
+    flex-direction: column;
+  }
 }

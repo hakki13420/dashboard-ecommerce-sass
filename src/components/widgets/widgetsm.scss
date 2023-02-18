@@ -13,7 +13,12 @@
 
 .widgetSmItem{
   @include dflex(row, space-between, center,0);
-  padding: 10px;  
+  padding: 10px; 
+  @media screen and (max-width:768px){
+    @include dflex(column, center, center,10px);
+    border-bottom: 1px solid gray;
+    font-size: 10px;
+  }
 }
 
 .widgetSmImage{  

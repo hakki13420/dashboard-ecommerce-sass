@@ -21,9 +21,16 @@
       .wgBtn{
         display: block;
         width: 100px;        
-        text-align: center
+        text-align: center;
+        @media screen and (max-width:768px){
+          width:60px;
+          font-size: 9px;
+        }
       }
     }
+  }
+  @media screen and (max-width:768px){
+    font-size: 10px;
   }
 }
 
@@ -32,6 +39,15 @@
   img{
     @include circle(40px, 40px);
     object-fit: cover;
+  }
+  @media screen and (max-width:768px){
+    flex-direction: column;
+  }
+}
+.dateCell{
+  @media screen and (max-width:768px){
+    font-size: 10px;
+    width:60px;
   }
 }
 
